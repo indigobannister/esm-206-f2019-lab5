@@ -370,7 +370,19 @@ summary {
 </div>
 
 
-
+<div id="objectives" class="section level2">
+<h2>Objectives:</h2>
+<ul>
+<li>Getting counts for different groups</li>
+<li>use {lubridate} to parse dates</li>
+<li>find confidence intervals aand do t-tests with t.test()</li>
+<li>Heatmap with geom_tile()</li>
+</ul>
+<p>Use the tidyr::uncount() function to expand a frequency variable:</p>
+<pre class="r"><code>lobster_tidy &lt;- lobster_abundance %&gt;% 
+  tidyr::uncount(lobster_count)</code></pre>
+<p>Yay! Now each lobster has its own row. This is tidy format.</p>
+</div>
 
 
 
